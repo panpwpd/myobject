@@ -3,8 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<script type="text/javascript" src="js/jquery-1.11.0.js">
+		</script>
+		
 		<link rel="stylesheet" type="text/css" href="css/base.css"/>
-		<link rel="stylesheet" type="text/css" href="css/css1.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhuye.css"/>
+		<script type="text/javascript" src="js/hebing.js" charset="UTF-8">
+		</script>
+		<script type="text/javascript" src="js/startMove.js" charset="utf-8">
+		</script>
+		<script type="text/javascript" src="js/js1.js">
+		</script>
+		
 	</head>
 	<body>
 		<!--头部-->
@@ -18,7 +28,20 @@
 			<ul id="toubu_ul">
 				<li><a href="">我的安踏</a>|</li>
 				<li><a href="">品牌官网</a>|</li>
-				<li><span id="sj"></span><a href="">手机商城</a>|</li>
+				<li id="tou_sj">
+					<span id="sj"></span>
+					<a href="">手机商城</a>|
+				<div id="erwei" class="yerwei">
+					<p><span></span><span>手机安踏官方商城</span></p>
+					<p>
+						<span></span>
+						<span>官方商城微信</span>
+					</p>
+					
+				</div>	
+				
+				
+				</li>
 				<li><a href="" class="hov">企业团购</a>|</li>
 				<li><span id="xc"></span><a href="">购物车<span>(0)</span>件</a></li>
 			</ul>	
@@ -30,17 +53,114 @@
 		<div id="nav">
 			<div id="nav_xl">
 				<p>所有商品分类</p>
+				<div id="nav_xl_xia">
+				<div>
+					<p>男鞋</p>
+					<a href="">跑步鞋</a>
+					<a href="">篮球鞋</a>
+					<a href="">休闲鞋</a>
+					<a href="">板鞋</a>
+					<a href="">帆布鞋</a>
+					<a href="">足球鞋</a>
+					<a href="">保暖棉鞋</a>
+					<a href="">加大码鞋</a>
+					<a href="">2018新品</a>
+				</div>
+				<div>
+					<p>女鞋</p>
+					<a href="">跑步鞋</a>
+					<a href="">训练鞋</a>
+					<a href="">休闲鞋</a>
+					<a href="">板鞋</a>
+					<a href="">帆布鞋</a>
+					<a href="">2018新品</a>
+				</div>
+				<div>
+					<p>男装</p>
+					<a href="">T恤</a>
+					<a href="">卫衣/长T</a>
+					<a href="">短裤</a>
+					<a href="">梭织外套</a>
+					<a href="">运动套装</a>
+					<a href="">运动长裤</a>
+				</div>
+				<div>
+					<p>女装</p>
+					<a href="">T恤</a>
+					<a href="">卫衣/长T</a>
+					<a href="">短裤/七分裤</a>
+					
+					<a href="">运动套装</a>
+					<a href="">运动长裤</a>
+				</div>
+					<div>
+					<p>儿童</p>
+					<a href="">男童鞋</a>
+					<a href="">女童鞋</a>
+					<a href="">男童装</a>
+					<a href="">女童装</a>
+					<a href="">帆布鞋</a>
+					<a href="">足球鞋</a>
+					<a href="">配件</a>
+					<a href="">加大码鞋</a>
+					<a href="">小童</a>
+				</div>
+					<div>
+						<p>配件</p>
+						<a href="">男袜</a>
+						<a href="">女袜</a>
+						<a href="">儿童袜</a>
+						<a href="">运动内裤</a>
+						<a href="">背包</a>
+						<a href="">帽子</a>
+						<a href="">篮球/足球</a>
+					</div>
+				
+				
+				</div>
 			</div>
 			<ul id="nav_ul">
 				<li class="nav_x"><a href="">首页</a></li>
-				<li><a href="">跑步</a></li>
-				<li><a href="">篮球</a></li>
-				<li><a href="">足球</a></li>
-				<li><a href="">健身</a></li>
-				<li><a href="">休闲</a></li>
-				<li><a href="">配件</a></li>
-				<li><a href="">儿童</a></li>
-				<li class="nav_t" ><a href=""></a></li>
+				<li class="nav_er">
+					<a href="">跑步</a>
+					<div id="nav_er_er">
+						<div>
+							<img src="images/11735505.jpg" alt="" />
+						</div>
+						<div>
+							<div class="nav_er_erxia" >						
+								<p>
+									<a href="">男子跑步</a>
+								</p>
+								<p>
+									<a href="">跑步鞋</a>
+									<a href="">跑步服</a>
+									<a href="">加大码跑鞋</a>
+								</p>
+							</div>	
+							<div class="nav_er_erxia" >						
+								<p>
+									<a href="">女子跑步</a>
+								</p>
+								<p>
+									<a href="">跑步鞋</a>
+									<a href="">跑步服</a>
+									
+								</p>
+							</div>
+							
+							
+							
+						</div>
+					</div>
+				</li>
+				<li class="nav_er"><a href="">篮球</a></li>
+				<li class="nav_er"><a href="">足球</a></li>
+				<li class="nav_er"><a href="">健身</a></li>
+				<li class="nav_er"><a href="">休闲</a></li>
+				<li class="nav_er"><a href="">配件</a></li>
+				<li class="nav_er"><a href="">儿童</a></li>
+				<li class="nav_t nav_er" ><a href=""></a></li>
 				
 			</ul>
 			<form>
@@ -50,16 +170,272 @@
 		</div>
 	</div>
 	<!--banner-->
+	<div id="banner_wrap">
 	<div id="banner">
+		<ul id="imglist">
+			<li><img src="images/shangxin.jpg" alt="" /></li>
+			<li><img src="images/yaofeng.jpg" alt="" /></li>
+			<li>
+				<p>
+					<img src="images/pb_0315.png" alt="" />
+				</p>
+				<img src="images/pb_0315.jpg" alt="" /></li>
+			<li>
+				<img src="images/shangxin.jpg" alt="" />
+			</li>
+		</ul>
+		<ul id="weziList">
+				<li >要疯2.0新品上市</li>
+				<li class="hover">夏季上新</li>
+				<li>闪能科技跑鞋</li>
+			</ul>
+		<div id="btn_prev"><img src="images/banner_l.png" alt="" /></div>
+		<script type="text/javascript">
+		var obanner = document.getElementById("banner");
+	var oimglist = document.getElementById("imglist")
+	var owenzilist = document.getElementById("weziList");
+	var alist = oimglist.children;
+	var len = alist.length;
+	var perwidth = alist[0].offsetWidth;
+	var awenzi = owenzilist.children;
+	var abtn = document.getElementById("btn_prev")
+	
+	oimglist.style.width = perwidth*len+"px";
+	var i=0;
+	var timer = setInterval(function(){
+		move();
+	},3000);
+	function move(){
+		i++;
+		if(i==len){
+			oimglist.style.left = 0;
+			i=1;
+		}
+		if(i==-1){
+			oimglist.style.left = -perwidth*(len-1)+"px";
+			i=len-2;
+		}
+		for(var j=0;j<awenzi.length;j++){
+			awenzi[j].className="";
+		}
+		if(i==len-1){
+			awenzi[1].className="hover";
+		}else{
+			awenzi[i].className="hover";
+		}
+		startMove(oimglist,{left:-perwidth*i});
+	}
+	
+	abtn.onclick = function(){
+		i=i-2;
+		move();
+	}
+	
+		for (let k=0;k<awenzi.length;k++){
+			awenzi[k].onmouseover = function(){
+				i=k-1;
+				move();
+			}
+		}
+		obanner.onmouseover = function(){
+			clearInterval(timer);;
+		}
+		obanner.onmouseout = function(){
+			timer = setInterval(function(){
+				move();
+			},3000);
+		}	
+			
+		</script>
+	</div>
+</div>	
+<!--main_xl_wrap-->
+	<div id="main_xl_wrap">
+		<div id="main_xl">
+			<div id="main_xl_s">
+				<div id="main_xl_s_left">
+				<p id="main_xl_s_zi"><a href="">立即购买</a></p>
+				<figure>
+					
+					<img src="images/lkt_0502.jpg" alt="" />
+					<figcaption>
+						<p><a href="">篮球明星战靴</a></p>
+						<p>
+						<a href="">汤姆森三代</a> |
+						<a href="">汤姆森系列</a> |
+						<a href="">气垫篮球鞋</a> |
+						<a href="">篮球服饰</a>	
+						</p>
+						
+					</figcaption>
+				</figure>
+					
+				</div>
+				
+				<div id="main_xl_s_right">
+			<p id="main_xl_s_zi"><a href="">立即购买</a></p>		
+							<figure>
+					<img src="images/pb_0502.jpg" alt="" />
+					<figcaption>
+						<p><a href="">跑步系列</a></p>
+						<p>
+						<a href="">闪能科技跑鞋</a> |
+						<a href="">夏季新款</a> |
+						<a href="">舒适气垫</a> |
+						<a href="">跑步服装</a>	
+						</p>
+					</figcaption>
+				</figure>
+					
+					
+				</div>
+			</div>
+		<!--main_xl_x-->
 		
 		
-		
-		
-		
+			<div id="main_xl_x">
+				<div>
+					<figure>
+						<img src="images/uni_lq.gif"/>
+						<figcaption>
+							<a href="">汤普森战靴定制</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="images/fz_0201.jpg"/>
+						<figcaption>
+							<a href="">2018T恤上新</a>
+						</figcaption>
+					</figure>
+				</div>
+				<div>
+					<figure>
+						<img src="images/fugu_0201.jpg"/>
+						<figcaption>
+							<a href="">复古呈新　安踏休闲系列</a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--main2-->
+	<div id="main2_wrap">
+		<div id="main2">
+			<div id="main2_t">
+				<p>A-FLASHFOAM闪能科技</p>
+				<p>轻量化EVA高回弹复合材料，安踏自主研发，为跑者提供充足动力。</p>
+			</div>
+			<div id="main2_lb">
+				<div id="main2_lb_left">
+					<ul id="main2_lb_left_img">
+						<li><img src="" alt="" /></li>
+						<li><img src="" alt="" /></li>
+						<li><img src="" alt="" /></li>
+						<li><img src="" alt="" /></li>
+						
+					</ul>
+					
+					
+				</div>
+				<div id="main2_lb_right">
+					
+				</div>
+				
+			</div>
+			
+			
+		</div>
+	
 	</div>
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div id="footer_wrap">
+		<div id="footer">
+			<div id="footer_left">
+				<div>
+					<p>用户指南</p>
+					<a href="">新用户注册</a>
+					<a href="">购物流程</a>
+					<a href="">尺码对照表</a>
+					<a href="">支付方式</a>
+					<a href="">包装形式</a>
+					<a href="">配送方式</a>
+					<a href="">配送费用</a>
+				</div>
+				<div>
+					<p>会员政策</p>
+					<a href="">积分政策</a>
+					<a href="">会员政策</a>
+					<a href="">用户协议</a>
+					<a href="">发票制度</a>
+				</div>
+				<div>
+					<p>售后服务</p>
+					<a href="">订单查询</a>
+					<a href="">快递查询</a>
+					<a href="">退换货政策</a>
+					<a href="">退换货流程</a>
+					<a href="">退款方式</a>
+				
+				</div>
+				<div>
+					<p>联系我们</p>
+				<a href="">企业团购</a>
+				<a href="">商务合作</a>
+				</div>
+			</div>
+			<div id="footer_right">
+			<p>在线资讯</p>	
+			<p></p>	
+			<p>
+				<span></span>
+				<span>在线客服</span>
+			</p>
+			<p>微信资讯</p>	
+			<p></p>
+			</div>
+		</div>
+	</div>
+	<div id="bottom_wrap">
+		<div id="bottom">
+			<div><span>COPYRIGHT 2012-2016&nbsp;厦门安踏电子商务有限公司 &nbsp;&nbsp;</span><span></span>&nbsp;&nbsp;<span>
+				
+			&nbsp;&nbsp;闽ICP备11020421号</span>
+				
+			</div>
+			<div>
+				<a href="">安踏特卖</a>
+				<a href="">网站地图</a>
+				<a href="">标签</a>
+				<a href="">友情链接</a>
+			</div>
+		</div>
+	</div>
 	
 	</body>
 </html>

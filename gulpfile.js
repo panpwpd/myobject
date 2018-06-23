@@ -53,6 +53,12 @@ gulp.task("script",function(){
 	.pipe(gulp.dest("dist/js"))
 	.pipe(connect.reload())
 })
+
+gulp.task("copy-js",function(){
+	gulp.src("js/**")
+	.pipe(gulp.dest("dist/js"))
+	.pipe(connect.reload());
+})
 //将合并文件进行压缩  并保留原来合并的
 gulp.task("script",function(){
 	gulp.src(["js/js1.js","js/js2.js"])
@@ -68,6 +74,7 @@ gulp.task("watch",function(){
 	gulp.watch("zhuye.html",["copy-zhuye"]);
 	gulp.watch("img/**",["images"]);
 	gulp.watch("stylesheet/*",["sass"])
+	gulp.watch("js/**",["copy-js"])
 	
 })
 //gulp-connect插件搭载本地服务
