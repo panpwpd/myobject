@@ -55,6 +55,8 @@ input,a{outline:none;}
       }
    }
 
+
+
 #tou_sj{
     position: relative;
     #erwei{
@@ -139,6 +141,7 @@ width: 135px;                    height:30px ;
         height: 39px;
         width:1190px;
         margin: 0 auto;
+         background: #231F20;
         #nav_xl{
             float: left;
             width: 210px;
@@ -220,7 +223,7 @@ width: 135px;                    height:30px ;
        } 
         form{
             float:right;
-           
+           background: #231F20;
            #nav_seatch{
                float: left;
                width: 150px;
@@ -313,7 +316,11 @@ width: 135px;                    height:30px ;
         }  }
     }
 }
-
+#nav .fixnav{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 
 
@@ -336,6 +343,11 @@ width: 135px;                    height:30px ;
         margin: 0 auto;
       
         margin-top:5px;
+        a:hover{
+            color: red;
+            text-decoration: underline;
+            
+        }
         #footer_left{
             width:790px;
             height:245px;
@@ -390,7 +402,7 @@ width: 135px;                    height:30px ;
                 border: 1px solid #999; 
                 text-align: center;
                 border-radius: 5px;
-                
+               
                 span:nth-child(1){
                     float: left;
                     height:18px;
@@ -399,11 +411,12 @@ width: 135px;                    height:30px ;
                     margin:  5px 20px 0 20px;
                     background:url(../images/service-icon.png) no-repeat -26px -185px ;
                 }
+                
                 span:nth-child(2){
                     display: block;
                     float: left;
                 }
-                }
+            }
                 p:nth-child(4){
                     height:40px;
                     line-height: 40px;
@@ -427,7 +440,7 @@ width: 135px;                    height:30px ;
         margin: 0 auto;
         color: #fff;
         font-size: 12px;
-        border: 1px solid #fff;
+        
         div:nth-child(1){
             float: left;
              height:60px;
@@ -457,7 +470,55 @@ width: 135px;                    height:30px ;
     }
 }
 
-
+#zhuye_cebianlan{
+    height: 350px;
+    width: 35px;
+    border: 1px solid red;
+    position: fixed;
+    right: 0;
+    top: 300px;
+    background-color:#000000;
+    
+    
+    div:nth-child(1){
+        height:35px;
+        width: 35px;
+       
+        background-image:url(../images/index-icon.png) ;
+       background-position:2px -220px;
+    }
+    div:nth-child(2){
+        height:95px;
+        width: 35px;
+        
+        
+       background-position:0px -220px;
+       p:nth-child(1){
+           height:25px;
+            width: 25px;
+            border-top: 1px solid #999;
+            margin-left: 5px;
+             margin-top: 5px;
+            background:url(../images/index-icon.png) no-repeat 0px -263px;
+       }
+       p:nth-child(2){
+           color: #fff;
+           width:25px;
+           margin-left: 5px;
+           text-align: center;
+            border-bottom: 1px solid #999;
+       }
+    }
+    div:nth-child(3){
+        height: 40px;
+        width: 35px;
+         background:url(../images/index-icon.png) no-repeat 2px -120px;
+    }
+    div:nth-child(4){
+        
+    }
+    
+}
 
 
 

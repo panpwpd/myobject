@@ -1,0 +1,258 @@
+
+#dl_logo{
+    height:40px;
+    width: 365px;
+    margin: 0 auto;
+    margin-top:100px ;
+}
+#dl_biao{
+    height: 280px;
+    width: 365px;
+    margin: 0 auto;
+    background: #fff;
+    p{
+       height: 58px;
+       margin-top:10px;
+       line-height: 58px;
+       font-size:14px;
+       font-weight: 900;
+    }
+}
+#dl_tel{
+    height: 40px;
+    width: 365px;
+    border:1px solid #999;
+    margin-bottom: 15px;
+    input{
+        border: 0;
+        height: 36px;
+        line-height: 36px;
+        font-size: 18px;
+        text-indent: 6px;
+        
+        color:#cecece;
+        
+    }
+}
+#dl_yz{
+    height: 40px;
+    width:210px;
+    border: 1px solid #999;
+    position: relative;
+    margin-bottom: 70px;
+    input{
+        border:0;
+        height: 36px;
+        line-height: 36px;
+        width: 200px;
+        text-indent: 6px;
+        font-size: 18px;
+    }
+    
+    #dl_yzm{
+    height: 38px;
+    width: 100px;
+        border: 1px solid #999;
+        position: absolute;
+        left: 230px;
+        top:-10px;
+    }
+    
+} 
+#tijiao{
+    height:44px;
+    width: 365px;
+  
+    input{
+        height: 40px;
+        width: 365px;
+        border: 0;
+        font-size:20px;
+        color: #fff;
+        line-height: 40px;
+        text-align: center;
+          background: #d71921;
+    }
+}
+#dl_footer_wrap{
+
+#dl_footer{
+    height:130px;
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background: #f9f9f9;
+    
+    margin-top: 210px;
+    p{
+        height: 18px;
+        line-height: 18px;
+        text-align: center;
+        font-size: 13px;
+        color: #999999;
+    }
+    p:nth-of-type(1){
+        margin-top:23px;
+    }
+    
+    div{
+        height:40px;
+        width: 400px;
+       
+        margin: 0 auto;
+        a{
+           height: 40px;
+           width: 110px;
+            float: left;
+            margin-right: 3px;
+            overflow: hidden;
+        }
+        a:last-child{
+            height: 40px;
+            width: 40px;
+            margin-top: 3px;
+        }
+    }
+}
+
+}
+
+#dl_cebian{
+    height:150px;
+    width: 75px;
+    position:fixed;
+    bottom: 50px;
+    right: 30px;
+    div{
+        height:75px;
+        width: 75px;
+    }
+    div:nth-child(1){
+        background-image: url(../images/r_qq.png);
+        background-color: #fbb01f;
+    }
+    div:nth-child(1):hover{background-color: #be0411;}
+    div:nth-child(2){
+        background-image: url(../images/r_phone.png);
+        background-color: #d71921;
+        position: relative;
+        p{
+            position: absolute;
+            height: 75px;
+            width: 200px;
+            background: #d71921;
+            font-size: 20px;
+            color: #fff;
+            line-height: 75px;
+            text-align: center;
+            right: 70px;
+            top: 0;
+            display: none;
+            
+        }
+    }
+    
+}
+
+//_______________注册
+
+#zc_logo{
+    height:40px;
+    width: 365px;
+    margin: 0 auto;
+    margin-top:100px ;
+    margin-bottom: 20px;
+   img{
+       margin: 0 auto;
+   }
+}
+#zc_kuang{
+    height:342px;
+    width: 360px;
+    
+    margin: 0 auto;
+    div:nth-of-type(1),div:nth-of-type(2),div:nth-of-type(3){
+       height: 44px;
+       width:360px;
+       border: 1px solid #666666;
+       margin-bottom:15px;
+       input{
+           height: 42px;
+           width: 350px;
+           border: 0;
+           line-height: 40px;
+           text-indent: 10px;
+       } 
+    }
+    div:nth-of-type(3){
+        margin-top: 10px;
+       background: #d71921;
+       input{
+          background: #d71921;
+          font-size: 16px;
+          color: #fff;  
+       }
+    }
+    fieldset{
+        height: 32px;
+        width:360px;
+        margin-top:30px;
+        border-top: 1px solid #666666;
+        legend{
+            margin: 0 auto;
+            font-size: 12px;
+            padding: 0 5px;
+        }
+    }
+    div:nth-of-type(4){
+       height: 35px;
+       width: 145px; 
+       
+       margin: 0 auto;
+       display: flex;
+       justify-content: space-between;
+       a{
+          height: 35px;
+          width: 35px;
+          border-radius:50%;
+          
+          background-image: url(../images/service-icon.png); 
+       }
+       a:nth-child(1){
+           background-color: #8b8b8b;
+           background-position:-365px -5px ;
+       }
+       a:nth-child(2){
+           background-color: #717171;
+           background-position:-410px -5px ;
+       }
+       a:nth-child(3){
+           background-color: #525252;
+           background-position:-330px -5px ;
+       }
+       a:hover{
+           background-color:blue ;
+       }
+    }
+    div:nth-of-type(5){
+        height: 20px;
+        width: 360px;
+        margin-top:28px;
+        text-align: center;
+        a{
+            font-size: 12px;
+            
+        }
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+

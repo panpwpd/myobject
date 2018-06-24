@@ -33,6 +33,7 @@ gulp.task("copy-img",function(){
 	gulp.src("img/**")
 	.pipe(imagemin())
 	.pipe(gulp.dest("dist/images"))
+	.pipe(connect.reload())
 })
 //将scss转化为css
 //压缩css    cnpm install gulp-clean-css --save-dev
@@ -69,12 +70,19 @@ gulp.task("script",function(){
 	.pipe(gulp.dest("dist/js"))
 	
 })
+//监听html文件
+gulp.task("copy-html",function(){
+	gulp.src("html/**")
+	.pipe(gulp.dest("dist/html"))
+	.pipe(connect.reload());
+})
 //时时监听文件
 gulp.task("watch",function(){
 	gulp.watch("zhuye.html",["copy-zhuye"]);
 	gulp.watch("img/**",["images"]);
 	gulp.watch("stylesheet/*",["sass"])
 	gulp.watch("js/**",["copy-js"])
+	gulp.watch("html/**",["copy-html"])
 	
 })
 //gulp-connect插件搭载本地服务

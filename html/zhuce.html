@@ -9,26 +9,29 @@
 			
 	</head>
 	<body>
-		<div id="zc_logo">
+		<div id="dl_logo">
 			<img src="../images/logo.png"/>
 		</div>
-		<div id="zc_kuang">
-			<div><input type="text" placeholder="邮箱/手机号码/安踏账号"/></div>
-			<div><input type="text"  placeholder="密码"/></div>
-			<div><input type="button" value="立即登录" /></div>
-			<fieldset>
-				<legend>其他方式登录</legend>
-			</fieldset>
+		
+		<div id="dl_biao">
+			<p>请输入手机号或者邮箱地址注册</p>
+			<form>
+			<div id="dl_tel">
+				<input type="text" placeholder="邮箱/手机号"/>
+			</div>	
 			
-			<div>
-				<a href=""></a>
-				<a href=""></a>
-				<a href=""></a>
+			<div id="dl_yz">
+				<input type="text" placeholder="图片验证"/>
+				
+				<p id="dl_yzm"></p>
+					
+				
 			</div>
-			<div>
-				<a href="denglu.html">账号注册</a> |
-				<a href="">忘记密码</a>
+			<div id="tijiao">
+				<input type="button" name="" id="btn" value="确认" />
 			</div>
+			
+			</form>	
 		</div>
 		<div id="dl_footer_wrap">
 			
@@ -44,14 +47,19 @@
 			</div>
 		</div>
 	</div>	
-		<div id="dl_cebian">
+	<div id="dl_cebian">
 		<div></div>
 		<div id="dl_kftel">
 			<p id="dl_kftel_hao">400-858-2020</p>
 		</div>
 	</div>
-		
 		<script type="text/javascript">
+//			$("#dl_kftel").hover(function(){
+//				$("#dl_kftel_hao").("slow")
+//			},function(){
+//				$("#dl_kftel_hao").hide()
+//			})
+
 			$("#dl_kftel").hover(function(){
 				console.log("aaa")
 				$("#dl_kftel_hao").stop().animate().show(500);
@@ -60,8 +68,7 @@
 			})
 			
 			
+			
 		</script>
-		
-		
 	</body>
 </html>
