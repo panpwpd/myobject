@@ -6,7 +6,9 @@
 		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/css2.css"/>
 		<script src="/../js/jquery-1.11.0.js" type="text/javascript"></script>
+		<script src="../js/zhuce.js" type="text/javascript">
 			
+		</script>	
 	</head>
 	<body>
 		<div id="dl_logo">
@@ -15,20 +17,26 @@
 		
 		<div id="dl_biao">
 			<p>请输入手机号或者邮箱地址注册</p>
+			
 			<form>
 			<div id="dl_tel">
-				<input type="text" placeholder="邮箱/手机号"/>
+				<input type="text" placeholder="邮箱/手机号" id="dl_xiedianhua"/>
+				<p id="dl_tel_cs"></p>
 			</div>	
 			
 			<div id="dl_yz">
-				<input type="text" placeholder="图片验证"/>
+				<input type="text" placeholder="图片验证" id="dl_yz_mazhi"/>
 				
 				<p id="dl_yzm"></p>
-					
-				
+				<p id="dl_tanchu"></p>	
+				<p id="dl_zhuce_chs"></p>
 			</div>
+			
 			<div id="tijiao">
-				<input type="button" name="" id="btn" value="确认" />
+				
+				
+					<input type="button" name="" id="dl_btn" value="确认" />
+				
 			</div>
 			
 			</form>	
@@ -54,14 +62,9 @@
 		</div>
 	</div>
 		<script type="text/javascript">
-//			$("#dl_kftel").hover(function(){
-//				$("#dl_kftel_hao").("slow")
-//			},function(){
-//				$("#dl_kftel_hao").hide()
-//			})
 
 			$("#dl_kftel").hover(function(){
-				console.log("aaa")
+				//console.log("aaa")
 				$("#dl_kftel_hao").stop().animate().show(500);
 			},function(){
 				$("#dl_kftel_hao").hide();

@@ -470,10 +470,10 @@ width: 135px;                    height:30px ;
     }
 }
 
+//侧边栏
 #zhuye_cebianlan{
-    height: 350px;
+    height: 380px;
     width: 35px;
-    border: 1px solid red;
     position: fixed;
     right: 0;
     top: 300px;
@@ -513,17 +513,200 @@ width: 135px;                    height:30px ;
         height: 40px;
         width: 35px;
          background:url(../images/index-icon.png) no-repeat 2px -120px;
+         position: relative;
+         p{
+             position: absolute;
+             height: 40px;
+             width: 100px;
+             background:#4e515a;
+             left: -100px;
+             line-height: 40px;
+             color: #fff;
+             font-size: 14px;
+             text-align: center;
+             display: none;
+         }
     }
     div:nth-child(4){
-        
+         height: 40px;
+        width: 35px;
+         background:url(../images/index-icon.png) no-repeat 2px -290px;
+          position: relative;
+         p{
+             position: absolute;
+             height: 40px;
+             width: 100px;
+             background:#4e515a;
+             left: -100px;
+             line-height: 40px;
+             color: #fff;
+             font-size: 14px;
+             text-align: center;
+              display: none;
+         }
+    }
+    div:nth-child(5){
+         height: 40px;
+        width: 35px;
+         background:url(../images/index-icon.png) no-repeat 2px -15px;
+          position: relative;
+         p{
+             position: absolute;
+             height: 60px;
+             width: 150px;
+             background:#4e515a;
+             left: -150px;
+             top: -10px;
+             line-height: 40px;
+             color: #fff;
+             font-size: 14px;
+             text-align: center;
+              display: none;
+             span:nth-child(1){
+                 display: block;
+                 height:20px;
+                 line-height: 40px;
+                 width: 150px;
+                   font-size: 14px;
+             }
+             span:nth-child(2){
+                 display: block;
+                 height:40px;
+                 line-height: 40px;
+                 width: 150px;
+                   font-size: 18px;
+             }
+         }
+    }
+     div:nth-child(6){
+         height: 40px;
+        width: 35px;
+         background:url(../images/index-icon.png) no-repeat 2px -320px;
+         position: relative;
+         p{
+             position: absolute;
+             height: 40px;
+             width: 100px;
+             background:#4e515a;
+             left: -100px;
+             line-height: 40px;
+             color: #fff;
+             font-size: 14px;
+             text-align: center;
+              display: none;
+         }
+    }
+    div:nth-child(7){
+         height: 40px;
+        width: 35px;
+         background:url(../images/index-icon.png) no-repeat 2px -150px;
+         position: relative;
+         p{
+             position: absolute;
+             height: 150px;
+             width: 280px;
+             background:#4e515a;
+             left: -280px;
+             top: -100px;
+             line-height: 40px;
+             color: #fff;
+             font-size: 14px;
+             text-align: center;
+              display: none;
+              span:nth-child(1){
+                  display: block;
+                  float: left;
+                  height:140px;
+                  width:130px ;
+                  background: url(../images/public.gif) no-repeat 10px -130px;
+                  a{
+                      position: absolute;
+                      bottom: 0;
+                      left:20px;
+                  }
+              }
+              span:nth-child(2){
+                  display: block;
+                  float:right;
+                  height:115px;
+                  width:115px ;
+                  margin-top:5px ;
+                  margin-right: 5px;
+                  background: url(../images/qr-code.jpg) no-repeat center/cover;
+                   a{
+                      position: absolute;
+                      bottom: 0;
+                      right:20px;
+                  }
+              }
+              
+         }
+    }
+    div:nth-child(8){
+         height: 40px;
+        width: 35px;
+         background:url(../images/index-icon.png) no-repeat -40px -190px;
+    }
+    
+    div:hover{
+        background-color: #FF0000;
+    }
+}
+
+#nav_xl_xia .zhuye_sanji{
+    height:300px;
+    width: 600px;
+    position: absolute;
+    border: 1px solid red;
+    left: 210px;
+    top: 100px;
+    opacity: .9;
+    background: #999999;
+    overflow: hidden;
+    display: none;
+    #zhuye_sanji_zuo{
+        height:200px;
+        width: 360px;
+        border-top: 1px dashed green;
+        border-bottom: 1px dashed green;
+       position: absolute;
+       top: 30px;
+       left: 10px;
+        p{
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+            span{
+               
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+                margin-right: 20px;
+            }
+        }
     }
     
 }
 
-
-
-
-
+#zhuye_sanji_you{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    height:300px;
+    width:200px;
+    
+    p{
+        height: 30px;
+        width: 200px;
+        line-height: 30px;
+        font-size: 16px;
+        img{
+        height: 200px;
+        width: 200px;
+        
+        }
+    }
+}
 
 
 

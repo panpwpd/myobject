@@ -18,11 +18,35 @@
        font-weight: 900;
     }
 }
+
+#dl_tel_cs{
+    height:40px!important;
+    line-height: 40px!important;
+    text-align: center;
+    width:150px;
+    font-size: 14px;
+    
+    position: absolute;
+    top: -10px;
+    right:-160px;
+}
+#dl_zhuce_chs{
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    
+    display: none;
+}
+
+
 #dl_tel{
     height: 40px;
     width: 365px;
     border:1px solid #999;
     margin-bottom: 15px;
+    position: relative;
     input{
         border: 0;
         height: 36px;
@@ -50,12 +74,28 @@
     }
     
     #dl_yzm{
-    height: 38px;
+    height: 35px;
     width: 100px;
+    line-height: 38px;
+    font-size: 30px;
+    overflow: hidden;
+    color: blueviolet;
         border: 1px solid #999;
         position: absolute;
         left: 230px;
         top:-10px;
+    }
+    #dl_tanchu{
+        height: 30px;
+        line-height: 30px;
+        width: 200px;
+        color: red;
+        text-indent: 10px;
+       
+        position: absolute;
+        top: 40px;
+        left: 0;
+        display: none;
     }
     
 } 

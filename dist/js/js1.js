@@ -1,4 +1,50 @@
 $(function(){
+	
+	//遍历数据
+		
+		(function(){
+		var zhuye_zhuashi_hang_kuai_wrap=document.getElementsByClassName("zhuye_zhuashi_hang_kuai_wrap")[0];
+//		   console.log(zhuye_zhuashi_hang_kuai_wrap)
+		      var str1="";
+		      for(var i=0 ; i<60;i++){
+		      	str1+=`
+		      	 <div class="zhuye_zhuashi_hang_kuai">
+					
+					<div id="zhuye_zhuashi_hang_kuai_tu">
+						<img src="images/96828136_1_01.jpg" alt="" />
+					</div>
+					<div id="zhuye_zhuashi_hang_kuai_zi">
+						<div id="zhuye_zhuashi_hang_kuai_zi_tu">
+							
+							<a href=""><img src="images/96828136_1_01--w_30_h_30.jpg" alt="" /></a>
+							<a href=""><img src="images/96828136_2_01--w_30_h_30.jpg" alt="" /></a>
+							<a href=""><img src="images/96828136_4_01--w_30_h_30.jpg" alt="" /></a>
+							
+						</div>
+						<p>女子短袖针织衫</p>
+						<p>￥99.00</p>
+						<div id="zhuye_zhuashi_hang_kuai_zi_a">
+							
+							<a href="">
+								立即购买
+								<span></span>
+							</a>
+							
+						</div>
+					</div>
+					
+				</div>
+
+		      	
+		      	`
+		      }
+		      zhuye_zhuashi_hang_kuai_wrap.innerHTML=str1;
+		
+		})();
+		
+	
+	
+	
 	var goumai = document.getElementById("main_xl_s_zi")
 	var ofigure = document.getElementsByTagName("figure");
 //	console.log(ofigure)
@@ -112,7 +158,7 @@ for(var i=0;i<onav_er.length;i++){
 				
 				
 				startMove(omain2_left_img,{left:-perWidth*i});
-			}
+			};
 			
 // ------------------------------------------
 
@@ -198,7 +244,7 @@ for(var i=0;i<onav_er.length;i++){
 				
 				
 				startMove(omain2_right_img,{left:-perWidthr*io});
-			}
+			};
 			
 // ------------------------------------------
 
@@ -232,28 +278,129 @@ for(var i=0;i<onav_er.length;i++){
 	
 	//最下方的"添加更多划过效果"
 	$("#zhuye_zengduo_kuang").hover(function(){
-		$(this).find("span").animate({"width":"300px"}).end().find("a").css({"color":"#fff"})
+		$(this).find("span").animate({"width":"300px"}).end().find("a").css({"color":"#fff"});
 	},function(){
-		$(this).find("span").animate({"width":"0px"}).end().find("a").css({"color":"#999"})
+		$(this).find("span").animate({"width":"0px"}).end().find("a").css({"color":"#999"});
 	})
 	
-	//头部搜索框
-	var 
+	//展示商品下面购买状态
+	$("#zhuye_zhuashi_hang_kuai_zi_a").hover(function(){
+		$(this).find("span").animate({"width":"125px"}).end().find("a").css({"color":"#fff"});
+	},function(){
+		$(this).find("span").animate({"width":"0px"}).end().find("a").css({"color":"#999"});
+		
+	});
 	
+	//划过商品下面的字的时候高度变高
+	$(".zhuye_zhuashi_hang_kuai").hover(function(){
+		//console.log("aaa")
+		$(this).find("#zhuye_zhuashi_hang_kuai_zi").css({"height":"148px","background-color":"#fff","border":"1px solid #cecece",}).end().find("#zhuye_zhuashi_hang_kuai_zi_tu").show().end().find("#zhuye_zhuashi_hang_kuai_zi_a").show();
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	},function(){
+		$(this).find("#zhuye_zhuashi_hang_kuai_zi").css({"height":"75px","background-image":"url(images/overburden.png)"}).end().find("#zhuye_zhuashi_hang_kuai_zi_tu").hide().end().find("#zhuye_zhuashi_hang_kuai_zi_a").hide();
+		
 })
+	//划过图下面的小图会自动到大框中
+	
+	
+	
+	
+	
+	//主页侧边栏
+	$("#shouye_shouchang").hover(function(){
+		$(this).find("p").show();
+	},function(){
+		$(this).find("p").hide();
+	})
+	
+	$("#shouye_liulan").hover(function(){
+		$(this).find("p").show();
+	},function(){
+		$(this).find("p").hide();
+	})
+	
+	$("#shouye_shijian").hover(function(){
+		console.log("aaa")
+		$(this).find("p").show();
+	},function(){
+		$(this).find("p").hide();
+	})
+	
+	$("#shouye_kefu").hover(function(){
+		$(this).find("p").show();
+	},function(){
+		$(this).find("p").hide();
+	})
+	
+	$("#shouye_ceerma").hover(function(){
+		$(this).find("p").show();
+	},function(){
+		$(this).find("p").hide();
+	})
+	
+	var timerhui = null;
+	var ozhuyehui = document.getElementById("zhuye_dingbu");
+	window.onscroll = function(){
+		var Oscroll = document.documentElement.scrollTop||document.body.scrollTop;
+					if(Oscroll>=300){
+						ozhuyehui.style.display = "block";
+					}else{
+						ozhuyehui.style.display = "none";
+					}
+	}
+	ozhuyehui.onclick = function(){
+		timerhui = setInterval(function(){
+			var scrolltop1 = document.documentElement.scrollTop||document.body.scrollTop;
+			var target1=0;
+			var speed1 = (target1-scrolltop1)/9;
+			speed1=speed1>0? Math.ceil(speed1):Math.floor(speed1);
+			document.documentElement.scrollTop = document.body.scrollTop =scrolltop1+speed1;
+				if(speed1==target1){
+					clearInterval(timerhui);
+				}
+		},30)
+		
+	};
+	
+	//三级菜单划过出现
+	$("#zhuye_yousan").hover(function(){
+		console.log("aaa")
+		$(this).find(".zhuye_sanji").show().css({"background":"#999"})
+	},function(){
+		$(this).find(".zhuye_sanji").hide()
+	})
+	
+	$(".zhuye_sanji").hover(function(){
+		$(this).children().css({"background":"#999"})
+	});
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+})	
+	
+	
+	
+	
+	
+	
+	
+	
+
 	
 	
 
